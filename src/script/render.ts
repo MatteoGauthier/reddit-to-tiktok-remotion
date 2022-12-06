@@ -68,10 +68,10 @@ async function start() {
 		webpackOverride: (config) => config,
 	});
 
-	videosData.forEach(async (element: RedditTiktokTestProps) => {
+	for (const element of videosData) {
 		await renderOne(element, bundleLocation, compositionId, entry);
-	});
-	
+	}
+
 	const stopTimer = performance.now();
 
 	const inSeconds = (stopTimer - startTimer) / 1000;

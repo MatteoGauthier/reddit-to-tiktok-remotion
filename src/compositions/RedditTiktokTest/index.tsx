@@ -6,8 +6,8 @@ const offset = 400;
 export type RedditTiktokTestProps = {
 	videoUrl: string;
 	audioUrl?: string;
-	title: string
-	id: string
+	title: string;
+	id: string;
 };
 
 export const RedditTiktokTest: React.FC<RedditTiktokTestProps> = ({
@@ -44,7 +44,7 @@ export const RedditTiktokTest: React.FC<RedditTiktokTestProps> = ({
 			>
 				<Video style={{ width: '100%' }} src={videoUrl} />
 			</AbsoluteFill>
-			<Audio src={audioUrl} />
+			{audioUrl ? <Audio src={audioUrl} /> : null}
 		</>
 	);
 };
