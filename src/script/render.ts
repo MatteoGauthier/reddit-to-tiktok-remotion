@@ -45,6 +45,11 @@ const renderOne = async (
 		quality: 75,
 		overwrite: true,
 		concurrency: 6,
+		onProgress: ({ progress }) => {
+			process.stdout.write(
+				`📊 Rendering ${outputLocation} is ${progress * 100}% complete\r`
+			);
+		},
 	});
 	const stopTimer = performance.now();
 

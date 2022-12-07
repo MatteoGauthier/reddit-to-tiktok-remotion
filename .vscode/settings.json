@@ -5,5 +5,25 @@
 		"source.organizeImports": false,
 		"source.fixAll": true
 	},
-	"typescript.enablePromptUseWorkspaceTsdk": true
+	"typescript.enablePromptUseWorkspaceTsdk": true,
+	"workbench.colorCustomizations": {
+		"activityBar.activeBackground": "#d4f287",
+		"activityBar.background": "#d4f287",
+		"activityBar.foreground": "#15202b",
+		"activityBar.inactiveForeground": "#15202b99",
+		"activityBarBadge.background": "#19ade6",
+		"activityBarBadge.foreground": "#15202b",
+		"commandCenter.border": "#15202b99",
+		"sash.hoverBorder": "#d4f287",
+		"statusBar.background": "#c4ed59",
+		"statusBar.foreground": "#15202b",
+		"statusBarItem.hoverBackground": "#b4e82b",
+		"statusBarItem.remoteBackground": "#c4ed59",
+		"statusBarItem.remoteForeground": "#15202b",
+		"titleBar.activeBackground": "#c4ed59",
+		"titleBar.activeForeground": "#15202b",
+		"titleBar.inactiveBackground": "#c4ed5999",
+		"titleBar.inactiveForeground": "#15202b99"
+	},
+	"peacock.color": "#c4ed59"
 }
