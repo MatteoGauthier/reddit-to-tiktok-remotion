@@ -1,5 +1,4 @@
-import { Audio } from 'remotion';
-import { AbsoluteFill, useVideoConfig, Video } from 'remotion';
+import { AbsoluteFill, Audio, OffthreadVideo, useVideoConfig } from 'remotion';
 
 const offset = 400;
 
@@ -19,7 +18,7 @@ export const RedditTiktokTest: React.FC<RedditTiktokTestProps> = ({
 	return (
 		<>
 			<AbsoluteFill style={{ backgroundColor: 'black' }}>
-				<Video
+				<OffthreadVideo
 					style={{
 						width: width + offset,
 						height: height + offset,
@@ -42,7 +41,7 @@ export const RedditTiktokTest: React.FC<RedditTiktokTestProps> = ({
 					backgroundColor: 'rgba(0, 0, 0, 0.5)',
 				}}
 			>
-				<Video style={{ width: '100%' }} src={videoUrl} />
+				<OffthreadVideo style={{ width: '100%' }} src={videoUrl} />
 			</AbsoluteFill>
 			{audioUrl ? <Audio src={audioUrl} /> : null}
 		</>

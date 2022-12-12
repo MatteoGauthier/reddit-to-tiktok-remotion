@@ -47,7 +47,7 @@ const renderOne = async (
 		concurrency: 6,
 		onProgress: ({ progress }) => {
 			process.stdout.write(
-				`📊 Rendering ${outputLocation} is ${progress * 100}% complete\r`
+				`📊 Rendering ${outputLocation} is ${(progress * 100).toFixed()}% complete\r`
 			);
 		},
 	});

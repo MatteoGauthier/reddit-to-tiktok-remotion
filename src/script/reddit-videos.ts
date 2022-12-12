@@ -27,7 +27,7 @@ async function getPosts() {
 				videoUrl: video,
 				audioUrl: hasAudio ? audioUrl : undefined,
 				title: data.title,
-				id: `${data.subreddit}-${data.id}`,
+				id: `${data.subreddit}-${data.id}${hasAudio ? '' : '-no-audio'}`,
 			});
 		}
 	}
@@ -42,4 +42,3 @@ async function main() {
 }
 
 main();
-process.exit(0);
