@@ -82,6 +82,7 @@ async function start() {
 	const inSeconds = (stopTimer - startTimer) / 1000;
 	const rounded = Number(inSeconds).toFixed(3);
 	console.log(`🎉 All videos have been rendered in ${rounded}s!`);
+	process.exit()
 }
 
 start();

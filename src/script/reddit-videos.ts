@@ -39,6 +39,10 @@ async function main() {
 	await fs.writeFile('./data/videos.json', JSON.stringify(videos));
 
 	console.log('[SCRIPT] Reddit videos successfully fetched!');
+
+	process.exit()
+
 }
 
 main();
+
